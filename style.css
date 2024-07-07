@@ -3,16 +3,16 @@
                                 padding: 0;
                                 box-sizing: border-box;
                             }
-                            
+
                             ul {
                                 list-style: none;
                             }
-                            
+
                             a {
                                 text-decoration: none;
                                 color: #000;
                             }
-                            
+
                             body {
                                 display: flex;
                                 flex-direction: column;
@@ -20,12 +20,14 @@
                                 align-items: center;
                                 /* height: 100vh; */
                             }
-                            
+
+
+                            /* -----------START HEADER---------- */
                             header {
                                 width: 100%;
                                 height: 100%;
                             }
-                            
+
                             header .menu-container {
                                 position: relative;
                                 width: 100%;
@@ -33,7 +35,7 @@
                                 top: 0;
                                 right: 0;
                             }
-                            
+
                             header .menu-container .menu-open {
                                 position: absolute;
                                 top: 40px;
@@ -49,11 +51,11 @@
                                 justify-content: center;
                                 transition: all .3s ease-in;
                             }
-                            
+
                             header .menu-container .menu-open:hover {
                                 color: #c00;
                             }
-                            
+
                             .layer1 {
                                 background: yellow;
                                 position: relative;
@@ -64,7 +66,7 @@
                                 transition: all .3s ease-in-out;
                                 transition-delay: .9s;
                             }
-                            
+
                             .layer2,
                             .layer3,
                             .layer4 {
@@ -74,50 +76,50 @@
                                 height: 100%;
                                 transition: all .3s ease-in-out;
                             }
-                            
+
                             .layer2 {
                                 width: 0;
                                 background: crimson;
                                 transition-delay: .7s;
                             }
-                            
+
                             .layer3 {
                                 width: 0;
                                 background: #000;
                                 transition-delay: .5s;
                             }
-                            
+
                             .layer4 {
                                 width: 0;
                                 background: #fff;
                                 overflow: hidden;
                                 transition-delay: .3s;
                             }
-                            
+
                             .layer1.check {
                                 width: 410px;
                                 transition: .5s;
                                 transition-delay: .3s;
                             }
-                            
+
                             .check .layer2 {
                                 width: 395px;
                                 transition: .5s;
                                 transition-delay: .5s;
                             }
-                            
+
                             .check .layer3 {
                                 width: 380px;
                                 transition: .5s;
                                 transition-delay: .7s;
                             }
-                            
+
                             .check .layer4 {
                                 width: 365px;
                                 transition: .5s;
                                 transition-delay: .9s;
                             }
-                            
+
                             .menu-close {
                                 position: absolute;
                                 top: 30px;
@@ -127,11 +129,11 @@
                                 color: #000;
                                 transition: all 0.3s ease-in;
                             }
-                            
+
                             .menu-close:hover {
                                 color: #c00;
                             }
-                            
+
                             .links {
                                 position: absolute;
                                 top: 20%;
@@ -141,7 +143,7 @@
                                 align-items: center;
                                 justify-content: center;
                             }
-                            
+
                             .links a {
                                 font-size: 22px;
                                 font-weight: 900px;
@@ -149,19 +151,19 @@
                                 transition: all .3s ease-in;
                                 transform: translateY(10px);
                             }
-                            
+
                             .links a:hover {
                                 color: #c00;
                                 transform: translateY(0px);
                             }
-                            
+
                             .header {
                                 width: 100%;
                                 height: 100vh;
                                 position: relative;
                                 background: #333;
                             }
-                            
+
                             header .header #bg {
                                 position: absolute;
                                 top: 0;
@@ -171,7 +173,7 @@
                                 background: url(images/cover/main\ cover1.jpg);
                                 background-size: cover;
                             }
-                            
+
                             section .container {
                                 display: flex;
                                 flex-direction: column;
@@ -179,7 +181,7 @@
                                 justify-content: center;
                                 margin-top: 50px;
                             }
-                            
+
                             .sticky-menu-container {
                                 width: 100%;
                                 /* margin: 0 auto; */
@@ -191,7 +193,7 @@
                                 visibility: hidden;
                                 transition: all .6s ease-in-out;
                             }
-                            
+
                             .sticky-menu-container nav {
                                 display: flex;
                                 /* background: #fff; */
@@ -200,7 +202,7 @@
                                 /* padding: 40px 0; */
                                 width: 80%;
                             }
-                            
+
                             .sticky-menu-container nav ul {
                                 width: 60%;
                                 padding: 10px 0;
@@ -209,12 +211,12 @@
                                 align-items: center;
                                 justify-content: space-between;
                             }
-                            
+
                             .sticky-menu-container nav ul a {
                                 margin-right: 20px;
                                 /* color: #220f82; */
                             }
-                            
+
                             .sticky-menu-container.sticky {
                                 background: #000000;
                                 opacity: 1;
@@ -223,7 +225,35 @@
                                 position: fixed;
                                 top: 0;
                             }
-                            
+
                             .sticky-menu-container.sticky a {
                                 color: rgb(255, 255, 255);
+                            }
+
+                            /* -----------END HEADER---------- */
+
+                            /* -----------START SLIDER---------- */
+                            
+                            /* -----------END SLIDER---------- */
+
+
+
+                            @media (min-width: 768px) and (max-width: 991.98px) {
+                                html {
+                                    font-size: 9px;
+                                }
+
+                                .sticky-menu-container {
+                                    display: none;
+                                }
+                            }
+
+                            @media (max-width: 767.98px) {
+                                html {
+                                    font-size: 8px;
+                                }
+
+                                .sticky-menu-container {
+                                    display: none;
+                                }
                             }
